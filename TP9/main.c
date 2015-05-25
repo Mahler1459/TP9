@@ -13,14 +13,16 @@
  */
 int main(int argc, char** argv) {
     
-    union puertoc {    //la union se compone de una estructura (con los
-        struct puertosab {        //puertos a y b) y con el puerto c
+typedef union {    //la union se compone de una estructura (con los
+        struct {        //puertos a y b) y con el puerto c
             int porta;
             int portb;
-        };
+        }; 
         float portc;
-    };
+    } PUERTO;
 
+    PUERTO puertop;
+   
     return (EXIT_SUCCESS);
 }
 
