@@ -30,3 +30,5 @@
 
 # Debug files
 *.dSYM/
+/TP9/build/
+/TP9/dist/
